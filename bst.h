@@ -55,7 +55,7 @@ public:
   }
 
   bool contains(T val) const {
-    if      ( m_val == val         ) { return true;			         }
+    if      ( m_val == val         ) { return true;                  }
     else if ( m_val > val && m_lft ) { return m_lft ->contains(val); }
     else if ( m_val < val && m_rht ) { return m_rht ->contains(val); }
     return false;
