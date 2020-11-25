@@ -34,12 +34,12 @@ public:
         if      ( val < m_val  )
         {
             if ( !m_lft ) { m_lft = std::unique_ptr<BST>(new BST(val)); }
-            else 		  { m_lft->insert(val);                         }
+            else          { m_lft->insert(val);                         }
         }
         else
         {
             if ( !m_rht ) { m_rht = std::unique_ptr<BST>(new BST(val)); }
-            else 		  { m_rht->insert(val);                         }
+            else          { m_rht->insert(val);                         }
         }
     return *this;
   }
@@ -97,7 +97,7 @@ public:
 
           if      ( curNode->m_val == tgt ) { break; }
           else if ( curNode->m_val >  tgt ) { curNode = curNode->m_lft.get(); }
-          else								{ curNode = curNode->m_rht.get(); }
+          else                              { curNode = curNode->m_rht.get(); }
       }
 
     return minNode->m_val;
