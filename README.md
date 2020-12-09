@@ -1,4 +1,4 @@
-# BST
+# BST ![Language](https://img.shields.io/badge/language-C++14-orange.svg)
 A simple templated binary search tree implementation
 
 # Supported operations
